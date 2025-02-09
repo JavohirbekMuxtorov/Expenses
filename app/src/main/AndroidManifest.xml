@@ -23,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove">
+        </provider>
+        <meta-data android:name="io.sentry.dsn" android:value="https://eadba545e92946808f42508934c10e91@o1231793.ingest.sentry.io/6379506" />
+        <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0" />
     </application>
 
 </manifest>
